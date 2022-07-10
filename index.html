@@ -8,6 +8,25 @@
   background-attachment:fixed;
   cursor: url(assets/cute-strawberry/normal.cur), pointer;
 }
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(246, 117, 169);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(246, 117, 169);
+}
 .myDiv {
   border: 5px outset red;
   background-color: white;
@@ -24,9 +43,7 @@
 	margin-right: auto;
   width: 25%;
 }
-.projContainer {
 
-}
 .proj1 {
   border: 5px outset red;
   background-color: white;
@@ -44,6 +61,15 @@
   width: 25%;
 }
 .proj3 {
+  border: 5px outset red;
+  background-color: white;
+  text-align: center;
+  margin-left: auto;
+	margin-right: auto;
+  width: 25%;
+}
+
+.comingSoon {
   border: 5px outset red;
   background-color: white;
   text-align: center;
@@ -96,5 +122,8 @@ a:visited {
   <div class="proj3">
     <h2 style="font-family:Dosis"><a href="#">Owls</a></h2>
   </div><br>
+  <div class="comingSoon">
+    <h2 style="font-family:Dosis">More coming soon!</h2>
+  </div>
 </body>
 </html>
