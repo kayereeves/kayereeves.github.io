@@ -7,6 +7,7 @@
   background-repeat:repeat;
   background-attachment:fixed;
   cursor: url(assets/cute-strawberry/normal.cur), pointer;
+  overflow-y: scroll; /* Show vertical scrollbar */
 }
 /* width */
 ::-webkit-scrollbar {
@@ -27,13 +28,16 @@
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(246, 117, 169);
 }
+
+.container {
+  margin-left: auto;
+	margin-right: auto;
+  width: 50%;
+}
 .myDiv {
   border: 5px outset red;
   background-color: white;
   text-align: center;
-  margin-left: auto;
-	margin-right: auto;
-  width: 50%;
 }
 .myProjects {
   border: 5px outset red;
@@ -41,41 +45,23 @@
   text-align: center;
   margin-left: auto;
 	margin-right: auto;
-  width: 25%;
+}
+.sep {
+  height: 10px;
 }
 
-.proj1 {
-  border: 5px outset red;
+.proj {
   background-color: white;
   text-align: center;
   margin-left: auto;
 	margin-right: auto;
-  width: 25%;
-}
-.proj2 {
-  border: 5px outset red;
-  background-color: white;
-  text-align: center;
-  margin-left: auto;
-	margin-right: auto;
-  width: 25%;
-}
-.proj3 {
-  border: 5px outset red;
-  background-color: white;
-  text-align: center;
-  margin-left: auto;
-	margin-right: auto;
-  width: 25%;
 }
 
 .comingSoon {
-  border: 5px outset red;
   background-color: white;
   text-align: center;
   margin-left: auto;
 	margin-right: auto;
-  width: 25%;
 }
 
 a:hover {
@@ -90,6 +76,64 @@ a:visited {
   color: red;
 }
 
+/* Style The Dropdown Button */
+.dropbtn {
+  cursor: url(assets/cute-strawberry/normal.cur), pointer;
+  float: center;
+  display: block;
+  border: 5px outset red;
+  background-color: white;
+  text-align: center;
+  margin-left: auto;
+	margin-right: auto;
+  width: 602.5%;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  cursor: url(assets/cute-strawberry/normal.cur), pointer;
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  height: 250px;
+  overflow: auto;
+  cursor: url(assets/cute-strawberry/normal.cur), pointer;
+  width: 602%;
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  color: red;
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: white;
+}
+
 </Style>
 <html>
 <head>
@@ -100,30 +144,35 @@ a:visited {
 <meta name="description" content="Welcome to my GitHub page!">
 </head>
 <body>
+  <div class="container">
   <div class="myDiv">
     <h1 style="font-family:Euphoria Script">Kaye Reeves</h1>
     <p style="font-family:Dosis">Coder!
+      <br><br>kiannarachelmarie@gmail.com
+      <br><a href="https://github.com/kayereeves">GitHub</a>
+      <br><a href="https://www.linkedin.com/in/kaye-reeves-7489641b7/">LinkedIn</a>
       <br><br>Bachelor's of Science,
       <br>Computer Science
       <br>Cal Poly Pomona
-      <br>Spring 2022
-      <br><br>ฅ(=OܫO=)∫</p>
+      <br>Spring 2022</p>
   </div>
+  <div class="sep"></div>
+  <div class="dropdown">
+    <button class="dropbtn"><h1 style="font-family:Euphoria Script">My Projects</h1></button>
+    <div class="dropdown-content">
+      <div class="proj">
+        <p style="font-family:Dosis"><a href="https://beeroscope-portfolio.herokuapp.com/">Beeroscope</a></p>
+      </div><br>
+      <div class="proj">
+        <p style="font-family:Dosis"><a href="https://play.google.com/store/apps/details?id=vegout.vegout">VegOut</a></p>
+      </div><br>
+      <div class="comingSoon">
+        <p style="font-family:Dosis">More coming soon!</p>
+    </div>
+  </div>
+
+  </div>
+</div>
   <br><br>
-  <div class="myProjects">
-    <h1 style="font-family:Euphoria Script">My Projects</h1>
-  </div><br>
-  <div class="proj1">
-    <h2 style="font-family:Dosis"><a href="#">Beeroscope</a></h2>
-  </div><br>
-  <div class="proj2">
-    <h2 style="font-family:Dosis"><a href="#">VegOut</a></h2>
-  </div><br>
-  <div class="proj3">
-    <h2 style="font-family:Dosis"><a href="#">Owls</a></h2>
-  </div><br>
-  <div class="comingSoon">
-    <h2 style="font-family:Dosis">More coming soon!</h2>
-  </div>
 </body>
 </html>
